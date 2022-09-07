@@ -1,0 +1,210 @@
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Staatliches', cursive;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, input, legend, h2{
+    font-family: 'Staatliches', cursive;
+}
+body{
+    background-color: #E5E5E5;
+}
+body::before{ /* before ante do conteúdo, affter depois do conteudo, cria-se um novo element hmtl antes ou depois dos elementos da página/
+    content: '';em toda sudoclass é necessário inserir o conteudo mesmo que seja nulo*/
+    content: ' ';   
+    width: 100%; /*largura que prencha toda a página*/
+    height: 431px; /*altura*/
+
+    position: absolute; /*posicionamento absoluto, que libera algumas funçoes para edição do box... sem este elemento
+    nao seria possivel utilizar o color ou ate mesmo o zindex*/
+    top: 0;
+    left: 0;
+    z-index: -1; /*qual é a relação deste elemento perante os dado sobreposto ou superior aos elementos? */
+    background-color: #535971;
+
+}
+.page{ /*que armazena a div principal largura geral das boxes do body*/    
+    width: 800px;  
+    height: 1500px;  
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+}
+header{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    width: 357px;
+    text-align: left;
+    color: #FFFF;
+    
+}
+header h1{
+    font-size: 48px;   
+    margin-top: 140px;
+    margin-bottom: 10px;
+    
+}
+header p{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFF;
+    font-size: 20px;
+    line-height: 26px; /*espaço entre linhas*/
+       
+}
+form {    
+    background: #FFFF;
+    border-radius: 20px;    
+    padding: 30px 50px; 
+    max-height: 1100px;
+    max-width: 750px;  
+    position: absolute;
+    margin-top: 350px;
+    
+}
+fieldset{
+    border: none;        
+        
+}
+.fieldset-cadment{
+    min-width: 660px;
+    
+}
+.fieldset-cadment-name{     
+    display: flex;   
+    justify-content: space-between;      
+    
+}
+.fieldset-cadment input{
+    background:  #fafafc;
+
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;    
+
+    padding: 0 24px;
+
+    font-size:  16px;
+    line-height: 26px;
+
+    color: #c1bccc;
+}
+.fieldset-cadment-email .input-wrapper input{
+    width: 653px;
+   
+}
+.fieldset-cadment-name .input-wrapper input{
+    display: grid;
+    width: 290px;    
+}
+.fiedset-cadment-senha .input-wrapper input{
+    width: 653px;
+    margin-bottom: 20px;
+}
+.fieldset-cadment-mentor .input-wrapper input{
+    width: 653px;
+    background:  #fafafc;
+    
+    margin-bottom: 20px;
+    
+
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;    
+
+    padding: 0 24px;
+
+    font-size:  16px;
+    line-height: 26px;
+
+    color: #c1bccc;
+}
+fieldset legend{
+    position: block;    
+    color: #535971;
+    font-size: 24px;       
+
+    width:  650px;
+    border-bottom: 1px solid #C1BCCC;
+    
+
+    padding-bottom: 10px ;
+    margin-bottom: 40px;
+}
+h2{
+    position: block;    
+    color: #535971;
+    font-size: 20px; 
+    font-weight: lighter;
+       
+    padding-bottom: 10px ;
+    margin-bottom: 40px;
+}
+.input-wrapper{   
+
+    width: 300px;    
+}
+
+.input-wrapper label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 20px; 
+        
+   
+    color: #4e4958;
+    margin-bottom: 8px;     
+}
+.input-wrapper input{    
+    height: 50px;    
+}
+
+.input-wrapper label span {
+    margin-left: 12px;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #c1bccc;
+}
+.col-3-1, .col-3-2{
+    display: flex;   
+    justify-content: space-between;  
+    width: 500px;  
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+.col-3-1, .col-3-2, .input-wrapper input{
+    width: 135px;
+    gap: 12px;
+}
+.col-3-1,.col-3-2, .date .input-wrapper input{    
+    width: 295px;    
+}
+footer{
+    position: relative;
+    margin-top: 820px;
+    width:  752px;
+    height: 200px;
+    border-radius: 0px 0px 20px 20px;
+    align-items: center;
+    
+            
+    background-color: #535971;
+}
+footer input{
+    background-color: #FF5374;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 600px;
+    height: 55px;
+    margin-left: 76px;
+    margin-right: 76px;
+    margin-top: 72.5px;
+    margin-bottom: 72.5px;
+
+    
+    
+}
